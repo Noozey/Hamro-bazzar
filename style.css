@@ -6,6 +6,10 @@
 body{
     overflow: unset;
 }
+.resize{
+    width:max-content;
+    font-family: sans-serif;
+}
 .taskbar{
     display: flex;
     align-items: center;
@@ -25,17 +29,17 @@ body{
     height: 30px;
     width: auto;
 }
-.small-logo-img{
+.small-logo img{
     height: 50px;
     margin-top: -50px;
 }
 @media(min-width:1000px){
-    .small-logo-img{
+    .small-logo img{
         display: none;
     }
 }
 @media(max-width:1000px){
-    .big-logo-img{
+    .big-logo img{
             display: none;
      }
 }
@@ -149,14 +153,14 @@ body{
     margin-left: 12.5%;
 }
 .row{
-    border-bottom:1px solid var(--grey--color);
+    border-bottom:1px solid var(--grey--color) ;
     height: var(--height-rowcolumn);
-    width: 100%;
-    overflow: visible;
+    overflow: hidden;
     align-items: center;
-    justify-content: center;
+    justify-content: top;
     display: flex;
     font-family: sans-serif;
+    width: 100%;
 }
 .button1{
     border:1px solid var(--grey--color);
@@ -194,6 +198,9 @@ body{
 .saved>.fa-bookmark{
     color: inherit;
 }
+.Top-Categories{
+    margin-left: 10px;
+}
 .category{
     font-size: 25px;
     color: black;
@@ -212,14 +219,14 @@ body{
     border-bottom: 1px solid var(--grey--color);
     height: 65px;
     width: 60%;
-    margin-left: 30px;
+    margin-left: 10px;
     display: flex;
     align-items: center;
 }
 .column-side-bars{
     border-right:1px solid var(--grey--color);
     border-bottom: 1px solid var(--grey--color);
-    width: 20%;
+    flex:1;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -260,34 +267,34 @@ body{
     background-color: inherit;
 }
 .content{
-    border:none;
-    flex: 3;
+    border:1px sol;
     height: 100%;
     overflow: hidden;
+    flex: 3;
 }
 .trend{
   border-bottom: 1px solid var(--grey--color);
-  margin-left: 20px;
-  width: 100%;
+  margin-left: ;
+  width:99.5%;
   height:50px ;
-  overflow: hidden;
+  overflow:;
   display: flex;
   align-items: center;
   font-family: sans-serif;
   font-weight: bold;
   gap:10px;
+  justify-content: flex-start;
 }
 .boost{
     color: #0170B4;
-    margin-left: 75%;
     border: 1px solid transparent;
     font-size: 15px;
     font-weight: bold;
-    gap:5px;
-    display: flex;
+    width: max-content;
     padding: 10px;
     border-radius: 8px;
     background-color: transparent;
+    position: sticky;
 }
 .boost:hover{
    border: 1px solid #0170B4;
@@ -299,8 +306,8 @@ body{
     align-items: center;
 }
 .box{
-    height: 240px;
-    width: 160px;
+    height: 210px;
+    width: 80%;
     margin-top: 10px;
     border-radius: 15px;
     display: flex;
@@ -308,6 +315,7 @@ body{
     justify-content: center;
     align-items: center;
     border: 1px solid transparent;
+    margin-left: 1%;
 }
 .box:hover{
     background-color:#ccffff;
@@ -315,10 +323,9 @@ body{
     border: 1px solid blue;
 }
 .beer{
-    height: 135px;
-    width: 135px;
+    height: 110px;
+    width: 90%;
     border-radius:15px;
-    margin-top: px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -332,7 +339,8 @@ body{
     font-weight: 400;
     font-size: 15px;
     margin-top: 20px;
-    margin-right: 65px;
+    margin-left: -40%;
+    width: max-content;
 }
 .dot{
     margin-left: 80%;
@@ -341,19 +349,20 @@ body{
 .like-new{
     font-size: 13px;
     font-family: sans-serif;
-    margin-right: 80px;
+    margin-left: -50%;
     background-color: inherit;
     font-weight: 100;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 .money{
     font-size: 14px;
-    margin-top: 10px;
+    margin-top: 5px;
     background-color: inherit;
-    margin-right: 60px;
+    margin-left: -30%;
     font-family: sans-serif;
     font-weight: 550;
     column-gap: 20px;
+    width: max-content;
 }
 .lastest-upload{
     font-size: 15px;
@@ -362,14 +371,15 @@ body{
     margin-left: 15px;
     display: flex;
     cursor: pointer;
+    width: max-content;
 }
 .square{
-    margin-left: 45%;
+    margin-top: -7.5px;
+    margin-left: 40%;
     font-size: 25px;
 }
 .ends{
     height: 100%;
-    width: 90;
     margin-top: -290px;
 }
 .end{
@@ -404,6 +414,7 @@ body{
 }
 .ad2{
     margin-left: 67%;
+    
 }
 .ad2 img{
     height: 325px;
